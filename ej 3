@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class FacturaMetrogas {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Ingrese la cantidad de m3 consumidos: ");
+        double m3Consumidos = scanner.nextDouble();
+        
+        double total = 0;
+        
+        if (m3Consumidos <= 150) {
+            total = m3Consumidos * 15.80;
+        } else {
+            total = 150 * 15.80 + (m3Consumidos - 150) * 1.50;
+        }
+        
+        System.out.println("El total a pagar es: $" + total);
+    }
+}
