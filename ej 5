@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class PingPongPreguntas {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int respuestasCorrectas = 0;
+        
+        System.out.print("¿Cuál es la raíz cuadrada de 144? ");
+        int respuesta1 = scanner.nextInt();
+        if (respuesta1 == 12) {
+            respuestasCorrectas++;
+        }
+        
+        System.out.print("¿Quién fundó Buenos Aires? ");
+        scanner.nextLine(); // Limpiar el buffer del scanner
+        String respuesta2 = scanner.nextLine();
+        if (respuesta2.equalsIgnoreCase("Juan de Garay")) {
+            respuestasCorrectas++;
+        }
+        
+        System.out.print("¿Cuál es la capital de Francia? ");
+        String respuesta3 = scanner.nextLine();
+        if (respuesta3.equalsIgnoreCase("París")) {
+            respuestasCorrectas++;
+        }
+        
+        System.out.println("Respuestas correctas: " + respuestasCorrectas);
+    }
+}
