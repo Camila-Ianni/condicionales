@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Libreria {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Ingrese el total de la venta: ");
+        double totalVenta = scanner.nextDouble();
+        
+        System.out.print("Ingrese el tipo de venta (C para contado): ");
+        char tipoVenta = scanner.next().charAt(0);
+        
+        if (tipoVenta == 'C' || tipoVenta == 'c') {
+            totalVenta *= 0.90; // Descuento del 10%
+        }
+        
+        System.out.println("El total a pagar es: $" + totalVenta);
+    }
+}
