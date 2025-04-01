@@ -1,0 +1,25 @@
+package pepe;
+import java.util.Scanner;
+
+public class conditionals {
+	  public static void main(String[] args) {
+		 
+		          Scanner scanner = new Scanner(System.in);
+		          System.out.print("Ingrese la calificación del alumno: ");
+		          double calificacion = scanner.nextDouble();
+		          
+		          if (calificacion >= 4) {
+		              System.out.println("Aprobado");
+		          } else {
+		              System.out.println("No aprobado");
+		          }
+		      }
+		  
+ 
+			  
+		  
+	  
+		  {
+	  }
+
+}
